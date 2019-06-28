@@ -6,16 +6,19 @@ import numpy as npy
 from Bio.Phylo.TreeConstruction import DistanceCalculator
 from Bio.Phylo.TreeConstruction import DistanceTreeConstructor
 from Bio import Phylo
+import sys
 
-
+print("usage 03_map_reference_structure_to_sequence.py kinomealginment.fasta")
+inputFile=sys.argv[1]
 
 def getAlignmentPositionsToExtract(structureToAlignmentMap,sequenceSelections):
     #print(structureToAlignmentMap)
     #print(sequenceSelections)
     idxs=sequenceSelections
+    print(idxs)
     return(structureToAlignmentMap[idxs])
 
-alignment = AlignIO.read(open("02_kinase_domain_sequences_aligned.fasta"), "fasta")
+alignment = AlignIO.read(open(inputFile), "fasta")
 print("Number of sequences in alignment %i" % len(alignment))
 
 #take example structure and gather list of seq numbers to retain (uniprot sequence) -> map to kinase domain sequence -> map to sequence alignment
@@ -61,6 +64,7 @@ if len(idxs):
     constructor = DistanceTreeConstructor(calculator, 'nj')
     tree = constructor.build_tree(pocketAlignment)
     Phylo.write(tree, 'type1Inactive.xml', 'phyloxml')
+
 
 
 #approach to integrate here : 

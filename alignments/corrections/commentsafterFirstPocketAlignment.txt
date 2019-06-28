@@ -1,0 +1,19 @@
+kinases with gaps on type1inactive alignment
+after analysing the type1 inhactive alignment several sequences are found to have gaps 
+EPHA6 - the pfam domain definition of the kinase domain (Nter) is too short - 
+      - analysis done using 3decision vs EPHA2 - 6fnf
+
+KS6C1 - cannot do much about it - hmmalign doesn't align it well at all -> try by hand corrections or discard the sequence 
+PINK1 - alignment seems off - try to align it against the profile - 5yj9 - PINK1 in tribolium castaneum
+      - corrected kinase domain definitions from pfam ones to chunk written to PINK1_HUMAN
+      - MK09 similar on kinase domain to double check final pocket alignment structure 3npc
+AMHR2 - first residue missing
+AVR2A_HUMAN - realigning on sequence alignment
+AVR2B_HUMAN - realigning on sequence alignment
+CAMKV - realigning on sequence alginemnt - double check vs KCC1A_RAT structure 1a06
+MLKL - extended Nter part by 20 residues - realigned onto profile
+VRK3_HUMAN - realigning - not working well. extending 20 residues -> alignment is not good
+           - using reference structure to delimit sequence -> realignment used VRK1 structure 6cnx and VRK1 structure 2jii to correct the alignment and chosen sequence to align
+TRIB3_HUMAN - nter missing in pocket alignment -> checking if full sequence is present of the kinome domain
+            - comparing versus structure 5cem (trib1)
+            - realigning on sequence alignment

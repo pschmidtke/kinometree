@@ -67,11 +67,11 @@ LGVAKLHDLAD
 >BTK_HUMAN <unknown description>
 LGVAKTYNLSD
 >BUB1_HUMAN <unknown description>
-LGVVKGLNIID
+LGVNQGLNIID
 >CAMKV_HUMAN <unknown description>
 IEITKLLDVSD
 >CD11A_HUMAN <unknown description>
-IGVAKMYELGD
+IGVAKMYSLGD
 >CD11B_HUMAN <unknown description>
 IGVAKMYSLGD
 >CDC7_HUMAN_58_358 <unknown description>
@@ -83,7 +83,7 @@ IGVAKFYGLAD
 >CDK13_HUMAN <unknown description>
 IGVAKFYGLAD
 >CDK14_HUMAN <unknown description>
-LGVAKFYQLAD
+LGVAKFYYLAD
 >CDK15_HUMAN <unknown description>
 LGVAKFYQLAD
 >CDK16_HUMAN <unknown description>
@@ -93,7 +93,7 @@ LGVAKFYQLAD
 >CDK18_HUMAN <unknown description>
 LGVAKFYQLAD
 >CDK19_HUMAN <unknown description>
-VGVAKFYKLAD
+VGVAKFYHLAD
 >CDK1_HUMAN <unknown description>
 IGVAKFFKLAD
 >CDK20_HUMAN <unknown description>
@@ -111,19 +111,19 @@ IGVAKFHTLAD
 >CDK7_HUMAN <unknown description>
 LGVAKFFVLAD
 >CDK8_HUMAN <unknown description>
-VGVAKFYKLAD
+VGVAKFYHLAD
 >CDK9_HUMAN <unknown description>
 IGVAKFFGLAD
 >CDKL1_HUMAN <unknown description>
-IGVAKFYHLCD
+IGVAKFYELCD
 >CDKL2_HUMAN <unknown description>
 VGVAKFFDLCD
 >CDKL3_HUMAN <unknown description>
-VGVAKFFDLCD
+VGVAKFFELCD
 >CDKL4_HUMAN <unknown description>
-TGVAKFYNLCD
+TGVAKFYELCD
 >CDKL5_HUMAN <unknown description>
-VGVAKFYELCD
+VGVAKFYLLCD
 >CHK1_HUMAN <unknown description>
 LGVAKLYDLSD
 >CHK2_HUMAN <unknown description>
@@ -133,7 +133,7 @@ LGVAKFLDLVD
 >CLK2_HUMAN <unknown description>
 LGVAKFLDLVD
 >CLK3_HUMAN <unknown description>
-LGVAKFLELAD
+LGVAKFLFLAD
 >CLK4_HUMAN <unknown description>
 LGVAKFLDLVD
 >CSF1R_HUMAN <unknown description>
@@ -145,7 +145,7 @@ LGVVKFYQMID
 >CSK23_HUMAN <unknown description>
 LGVVKFHQMID
 >CSKP_HUMAN <unknown description>
-IGVAKFFFLGG
+IGVAKFFELGG
 >CSK_HUMAN <unknown description>
 IGVAKTYDLSD
 >CTRO_HUMAN <unknown description>
@@ -201,7 +201,7 @@ IGVAKTYALSD
 >EPHA5_HUMAN <unknown description>
 IGVAKTYTLSD
 >EPHA6_HUMAN <unknown description>
-IG---VYSLSD
+IGVAKVYSLSD
 >EPHA7_HUMAN <unknown description>
 IGVAKIFALSD
 >EPHA8_HUMAN <unknown description>
@@ -225,9 +225,9 @@ LGVCKTYDLAD
 >ERBB4_HUMAN <unknown description>
 LGVAKTLELTD
 >ERN1_HUMAN <unknown description>
-LGIAKILELSD
+LGVAKILELSD
 >ERN2_HUMAN <unknown description>
-LGFAKLLELSD
+LGVAKLLELSD
 >FAK1_HUMAN <unknown description>
 IGVAKMLSLGD
 >FAK2_HUMAN <unknown description>
@@ -291,7 +291,7 @@ LGVAKMYKVID
 >IKKE_HUMAN <unknown description>
 LGVAKMYSMTD
 >ILK_HUMAN <unknown description>
-LNLVKTWNMAD
+LNLVKTWNMSM
 >INSRR_HUMAN <unknown description>
 LGVAKMLSMGD
 >INSR_HUMAN <unknown description>
@@ -299,7 +299,7 @@ LGVAKMLSMGD
 >IRAK1_HUMAN <unknown description>
 IGVAKYFDLGD
 >IRAK2_HUMAN <unknown description>
-IGVVKYYDLA-
+IGVVKYYDLAH
 >IRAK3_HUMAN <unknown description>
 IGVAKYYDLTD
 >IRAK4_HUMAN <unknown description>
@@ -327,13 +327,13 @@ LGVAKMYSLTD
 >KAPCG_HUMAN <unknown description>
 LGVAKMYSLTD
 >KC1AL_HUMAN <unknown description>
-IGVAKMLNLID
+IGVAKMLDLID
 >KC1A_HUMAN <unknown description>
-IGIAKMLNLID
+IGIAKMLDLID
 >KC1D_HUMAN <unknown description>
-IGIAKMLNLID
+IGIAKMLDLID
 >KC1E_HUMAN <unknown description>
-IGIAKMLNLID
+IGIAKMLDLID
 >KC1G1_HUMAN <unknown description>
 IGLAKLLDLID
 >KC1G2_HUMAN <unknown description>
@@ -373,11 +373,11 @@ LGVAKMYYMAD
 >KPCB_HUMAN <unknown description>
 LGVAKMYYMAD
 >KPCD1_HUMAN <unknown description>
-LGVAKMKELCD
+LGVAKMKMLCD
 >KPCD2_HUMAN <unknown description>
-LGVAKMKELCD
+LGVAKMKMLCD
 >KPCD3_HUMAN <unknown description>
-LGVAKMKELCD
+LGVAKMKMLCD
 >KPCD_HUMAN <unknown description>
 LGVAKMFYLAD
 >KPCE_HUMAN <unknown description>
@@ -425,7 +425,7 @@ LGVAKLYMMTD
 >KS6B2_HUMAN <unknown description>
 LGVAKLCTMTD
 >KS6C1_HUMAN <unknown description>
---VEH-Y-LTY
+--------LTY
 >KSR1_HUMAN <unknown description>
 IGVARTFSFTD
 >KSR2_HUMAN <unknown description>
@@ -441,11 +441,11 @@ LGVAKTYDLAD
 >LIMK1_HUMAN <unknown description>
 LGAVKTYGLAD
 >LIMK2_HUMAN <unknown description>
-LGAVKTYDLAD
+LGAMKTYDLAD
 >LMTK1_HUMAN <unknown description>
 IGVVKMFGLGD
 >LMTK2_HUMAN <unknown description>
-IGVAVFFAFGD
+IGVIKFFAFGD
 >LMTK3_HUMAN <unknown description>
 IGVVKMFRLGD
 >LRRK1_HUMAN <unknown description>
@@ -567,7 +567,7 @@ LGVAKFKALCD
 >MKNK2_HUMAN <unknown description>
 LGVAKFKSLCD
 >MLKL_HUMAN <unknown description>
-LGAAKMYELAG
+IEIAKMYELAG
 >MOK_HUMAN <unknown description>
 IGVAKCLELGD
 >MOS_HUMAN <unknown description>
@@ -585,7 +585,7 @@ LGVAKTFVLCD
 >MP2K6_HUMAN <unknown description>
 LGVAKMLKLCD
 >MP2K7_HUMAN <unknown description>
-MGVAKMLKLCD
+MGVAKMLELCD
 >MRCKA_HUMAN <unknown description>
 IGVAKMYTLAD
 >MRCKB_HUMAN <unknown description>
@@ -633,9 +633,9 @@ IGVAKMYGFGD
 >NLK_HUMAN <unknown description>
 IGVAKTLKLCD
 >NRBP2_HUMAN <unknown description>
-TGVGRTYQFGS
+-----TYQFGS
 >NRBP_HUMAN <unknown description>
-DEVSRTYQFGS
+-----TYQFGS
 >NRK_HUMAN <unknown description>
 IGIAKMLDLVD
 >NTRK1_HUMAN <unknown description>
@@ -653,7 +653,7 @@ IGVAKLLDLCD
 >OBSCN_HUMAN_7672 <unknown description>
 IGVAKLLPIVD
 >OXSR1_HUMAN <unknown description>
-IGAAKMLDLAD
+IGVAKMLDLAD
 >PAK1_HUMAN <unknown description>
 IGVAKMYDLTD
 >PAK2_HUMAN <unknown description>
@@ -667,7 +667,7 @@ IGVAKMFDLSD
 >PAK6_HUMAN <unknown description>
 IGVAKMFDLSD
 >PASK_HUMAN <unknown description>
-LGVVKMHAVID
+LGVVKMKAVID
 >PDK1L_HUMAN <unknown description>
 VGVAKMFELAD
 >PDPK1_HUMAN <unknown description>
@@ -675,7 +675,7 @@ LGVAKLYKLTD
 >PDPK2_HUMAN <unknown description>
 LGVAKLYKLTD
 >PEAK1_HUMAN <unknown description>
-MKVIRRLDLSN
+------FQLSN
 >PGFRA_HUMAN <unknown description>
 LGVAKTYNLCD
 >PGFRB_HUMAN <unknown description>
@@ -685,15 +685,15 @@ LGVAKFLDLTD
 >PHKG2_HUMAN <unknown description>
 IGVAKFLDLSD
 >PI3R4_HUMAN <unknown description>
-LTVVKFYDMTD
+LTVVKRYDMTD
 >PIM1_HUMAN <unknown description>
-LGVAKLPDLID
+LGVAKLRDLID
 >PIM2_HUMAN <unknown description>
-LGVAKLPDLID
+LGVAKLRDLID
 >PIM3_HUMAN <unknown description>
-LGVAKLPDLID
+LGVAKLRDLID
 >PINK1_HUMAN <unknown description>
-L-IATMNQLAD
+IGVAKMNQL--
 >PKN1_HUMAN <unknown description>
 LGVAKMYLLAD
 >PKN2_HUMAN <unknown description>
@@ -711,13 +711,13 @@ LGVAKLMRLAD
 >PMYT1_HUMAN <unknown description>
 LGVAKTLQFGD
 >PRAG1_HUMAN <unknown description>
----VT---LSN
+--------LSN
 >PRKX_HUMAN <unknown description>
 VGVAKMYSLTD
 >PRKY_HUMAN <unknown description>
 MGVAKMYSLTD
 >PRP4B_HUMAN <unknown description>
-TGVAKFPELCD
+-GVAKFPELCD
 >PTK6_HUMAN <unknown description>
 LGVAKTLELGD
 >PTK7_HUMAN <unknown description>
@@ -737,7 +737,7 @@ VGVAKMYKLSD
 >RK_HUMAN <unknown description>
 LGVAKMIYLSD
 >RN5A_HUMAN <unknown description>
-ITIAKVLALAD
+---AKVLALAD
 >ROCK1_HUMAN <unknown description>
 IGVAKMYNLAD
 >ROCK2_HUMAN <unknown description>
@@ -751,21 +751,21 @@ LDVAKFYELSD
 >ROS1_HUMAN <unknown description>
 LGVAKLLTLGD
 >RPKL1_HUMAN <unknown description>
--G------LTY
+--------LTY
 >RYK_HUMAN <unknown description>
 LGIFKLYLVTD
 >SBK1_HUMAN <unknown description>
-LGVAKAYDLAD
+LGVAKQYDLAD
 >SBK2_HUMAN <unknown description>
-LGVAKTVALTD
+LGVAKTPALTD
 >SBK3_HUMAN <unknown description>
 LGVAKQYGLGD
 >SCYL1_HUMAN <unknown description>
-KGIDKTVLFGE
+---SFTAAFGD
 >SCYL2_HUMAN <unknown description>
-IGAAFTPNIMG
+-GIAFTPNIMG
 >SG196_HUMAN <unknown description>
-VGVASTYNISP
+VGVASTYN---
 >SG494_HUMAN <unknown description>
 VGVAKCYSLTD
 >SGK1_HUMAN <unknown description>
@@ -781,21 +781,21 @@ LGVAKTYDLAD
 >SIK3_HUMAN <unknown description>
 -----TYDLAD
 >SLK_HUMAN <unknown description>
-LGVAKIFMLAD
+LGVAKIFALAD
 >SNRK_HUMAN <unknown description>
-LGVAKLLDFTD
+LGVAKLLDVTD
 >SPEG_HUMAN_1601 <unknown description>
 IGLAKTLELCD
 >SPEG_HUMAN_2966 <unknown description>
-KGVVKASCLVD
+-GVVKASCLVD
 >SRC_HUMAN <unknown description>
 LGVAKTYDLAD
 >SRMS_HUMAN <unknown description>
 LGVAKTLALAD
 >SRPK1_HUMAN_80_475 <unknown description>
-LGVAKFVKLAD
+LGVAKFVWLAD
 >SRPK2_HUMAN_81_512 <unknown description>
-LGVAKFVKLAD
+LGVAKFVWLAD
 >ST17A_HUMAN <unknown description>
 LGVAKLYDLVD
 >ST17B_HUMAN <unknown description>
@@ -813,7 +813,7 @@ LGVAKIFALAD
 >STK11_HUMAN <unknown description>
 LGVAKMYELSD
 >STK16_HUMAN <unknown description>
-LGLAKLFNLMD
+LGVAKLFNLMD
 >STK24_HUMAN <unknown description>
 IGVAKMYDLAD
 >STK25_HUMAN <unknown description>
@@ -821,7 +821,7 @@ IGVAKMYDLAD
 >STK26_HUMAN <unknown description>
 IGVAKMYDLAD
 >STK31_HUMAN <unknown description>
---L--VYAFGD
+-----VYAFGD
 >STK33_HUMAN <unknown description>
 LGVAKMLEMTD
 >STK35_HUMAN <unknown description>
@@ -831,15 +831,15 @@ IGVAKTYQLCD
 >STK38_HUMAN <unknown description>
 IGVAKMFTLSD
 >STK39_HUMAN <unknown description>
-IGAAKMLDLAD
+IGVAKMLDLAD
 >STK3_HUMAN <unknown description>
 LGVAKMYDLAD
 >STK40_HUMAN <unknown description>
-LSIQKLLHVTN
+-----LC-VTN
 >STK4_HUMAN <unknown description>
 LGVAKMYDLAD
 >STKL1_HUMAN <unknown description>
-LGNKKMFELQD
+-GNVKMFEIQD
 >STRAA_HUMAN <unknown description>
 IGVTRTFDLSG
 >STRAB_HUMAN <unknown description>
@@ -847,23 +847,23 @@ IGVTKSFQLSG
 >STYK1_HUMAN <unknown description>
 IGIIKLDSLCG
 >TAOK1_HUMAN <unknown description>
-IGVAKMYELAD
+IGVAKMYDLAD
 >TAOK2_HUMAN <unknown description>
-IGVAKMYELGD
+IGVAKMYDLGD
 >TAOK3_HUMAN <unknown description>
-IGVAKMYELAD
+IGVAKMYDLAD
 >TBCK_HUMAN <unknown description>
----SKAHDLAK
+-----AHDLAK
 >TBK1_HUMAN <unknown description>
 LGVAKMFTMTD
 >TEC_HUMAN <unknown description>
 LGVAKTFNLSD
 >TESK1_HUMAN <unknown description>
-IGVVKTYQLGD
+IGVMLTYQLGD
 >TESK2_HUMAN <unknown description>
 IGVAKTYQLAD
 >TEX14_HUMAN <unknown description>
----TKYRSITN
+-----YRSHTN
 >TGFR1_HUMAN <unknown description>
 IGVAKSYDLAD
 >TGFR2_HUMAN <unknown description>
@@ -887,11 +887,11 @@ LGVAKMLALAD
 >TOPK_HUMAN <unknown description>
 LGVAKMYDVCD
 >TRIB1_HUMAN <unknown description>
-IG-RKF-SVES
+-----FKSVES
 >TRIB2_HUMAN <unknown description>
---VVKF-SIES
+LEVVKFRSIES
 >TRIB3_HUMAN <unknown description>
--RLTKFRSVEN
+LEATKFTSVEN
 >TRIO_HUMAN <unknown description>
 LGVAKLMDLAD
 >TSSK1_HUMAN <unknown description>
@@ -909,7 +909,7 @@ IGIAKMLDALD
 >TTBK2_HUMAN <unknown description>
 IGIAKMLDALD
 >TTK_HUMAN <unknown description>
-IGVAKM-SLID
+IGVAKMCSLID
 >TXK_HUMAN <unknown description>
 IGVAKTFNLSD
 >TYK2_HUMAN_589 <unknown description>
@@ -929,7 +929,7 @@ VGVAKMYDLAD
 >ULK3_HUMAN <unknown description>
 LGVAKMFRLAD
 >ULK4_HUMAN <unknown description>
-IGVFAVLTLSN
+IGVALVLTLSN
 >VGFR1_HUMAN <unknown description>
 LGVAKVYNLCD
 >VGFR2_HUMAN <unknown description>
@@ -937,11 +937,11 @@ LGVAKVFTLCD
 >VGFR3_HUMAN <unknown description>
 LGVAKVFNLCD
 >VRK1_HUMAN <unknown description>
-IGIPVMRELVD
+IGIGDMRKLVD
 >VRK2_HUMAN <unknown description>
-IGIKEMRKLAD
+IGIAHMRKLAD
 >VRK3_HUMAN <unknown description>
-FQ-QNLSSFAG
+QDLSKLSSFAG
 >WEE1_HUMAN <unknown description>
 IGVAKNYDFGD
 >WEE2_HUMAN <unknown description>
