@@ -33,4 +33,9 @@ STK31_HUMAN - extended nter
 
 
 SPEG_HUMAN_2966 - realigned
-SIK3_HUMAN  - extended Nter and realigned 
+SIK3_HUMAN  - extended Nter and realigned
+
+
+
+TODO : FLT4 missing -> add it manually
+PI4KB missing
