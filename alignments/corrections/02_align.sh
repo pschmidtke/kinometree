@@ -53,3 +53,65 @@ python3 sortAlignment.py final_kinome_alignment_10.fasta final_kinome_alignment_
 python3 removeSequenceFromAlignment.py final_kinome_alignment_10.fasta final_kinome_alignment_11.fasta TRIB2_HUMAN
 muscle -profile -in1 final_kinome_alignment_11.fasta -in2 TRIB2_HUMAN.fasta -out final_kinome_alignment_11.fasta
 python3 sortAlignment.py final_kinome_alignment_11.fasta final_kinome_alignment_11.fasta
+
+i=11
+j=12
+code="TRIB1_HUMAN"
+
+python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_kinome_alignment_${j}.fasta ${code}
+muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
+python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
+
+i=12
+j=13
+code="TEX14_HUMAN"
+
+python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_kinome_alignment_${j}.fasta ${code}
+muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
+python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
+
+
+i=13
+j=14
+code="STKL1_HUMAN"
+
+python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_kinome_alignment_${j}.fasta ${code}
+muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
+python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
+
+
+i=14
+j=15
+code="STK40_HUMAN"
+
+python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_kinome_alignment_${j}.fasta ${code}
+muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
+python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
+
+
+i=15
+j=16
+code="STK31_HUMAN"
+
+python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_kinome_alignment_${j}.fasta ${code}
+muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
+python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
+
+i=16
+j=17
+code="SPEG_HUMAN_2966"
+
+python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_kinome_alignment_${j}.fasta ${code}
+muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
+python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
+
+
+i=17
+j=18
+code="SIK3_HUMAN"
+
+python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_kinome_alignment_${j}.fasta ${code}
+muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
+python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
+
+

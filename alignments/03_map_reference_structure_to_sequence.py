@@ -23,13 +23,15 @@ print("Number of sequences in alignment %i" % len(alignment))
 
 #take example structure and gather list of seq numbers to retain (uniprot sequence) -> map to kinase domain sequence -> map to sequence alignment
 refUniprotCode="CDK2_HUMAN"
+#refUniprotCode="CMGC_CDK_CDC2_CDK2"
 kinaseDomainRange=[(4+1),286]    #+1 here because I dropped the initial residue (python 0 indexing error before)
+#kinaseDomainRange=[(3+1),286]    #+1 here because I dropped the initial residue (python 0 indexing error before)
 type1InactiveSeedStructure={"6guk":"FC8"}
-residueSelection=npy.array([10,13,18,31,33,80,82,89,134,144,145])
+residueSelection=npy.array([10,13,14,15,18,20,31,33,55,58,63,64,66,78,80,82,86,89,131,132,134,144,145,146,148,])
 
-typeIIInactiveSeedStructure={"4nj3":"2KD"}
+type1InactiveSeedStructure={"4nj3":"2KD"}
 
-typeIIActiveSeedStructure={"5a14":"LQ5"}
+type2IActiveSeedStructure={"5a14":"LQ5"}
 
 
 
@@ -59,11 +61,12 @@ if len(idxs):
     AlignIO.write(pocketAlignment, output_handle, "fasta")
     output_handle.close()
 
-    calculator = DistanceCalculator('benner6')
+    calculator = DistanceCalculator('blosum62')
     dm = calculator.get_distance(pocketAlignment) 
     constructor = DistanceTreeConstructor(calculator, 'nj')
     tree = constructor.build_tree(pocketAlignment)
     Phylo.write(tree, 'type1Inactive.xml', 'phyloxml')
+    Phylo.write(tree, 'type1Inactive.nwk', 'newick')
 
 
 

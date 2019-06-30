@@ -17,3 +17,20 @@ VRK3_HUMAN - realigning - not working well. extending 20 residues -> alignment i
 TRIB3_HUMAN - nter missing in pocket alignment -> checking if full sequence is present of the kinome domain
             - comparing versus structure 5cem (trib1)
             - realigning on sequence alignment
+TRIB2_HUMAN - nter missing in pocket alignment -> checking if full sequence is present of the kinome domain
+            - comparing versus structure 5cem (trib1)
+            - realigning on sequence alignment
+TODO : TRIB1_HUMAN - nter missing in pocket alignment -> checking if full sequence is present of the kinome domain
+            - comparing versus structure 5cem (trib1)
+            - realigning on sequence alignment
+            - truncated cter to match length of trib2 and 3 - still gap on position 7 -> manuel change of final alignment required
+
+TEX14_HUMAN - extending nter to a very large portion and realigning - trial and  error here; 
+            - warning no catalytic K -> but no kinase activity, so might be relevant
+STKL1_HUMAN - extended n-ter + realigned
+STK31_HUMAN - extended nter 
+            - corrected alignment shifting R on position of cataytic lysine compared to other kinases
+
+
+SPEG_HUMAN_2966 - realigned
+SIK3_HUMAN  - extended Nter and realigned 
