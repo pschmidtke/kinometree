@@ -8,7 +8,6 @@ for ix, row in uniprotids.iterrows():
     #print(ix,row["Entry"])
     table.loc[table["UniprotID"]==row["Entry"],'UNIPROT_CODE'] = row["Entry name"]
 
-
 table.to_csv("naming_kinmap.csv",sep="\t")
 
 

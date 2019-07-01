@@ -1,0 +1,2 @@
+HMS LINCS Batch ID,HMS LINCS ID,Name,Alternative Names,LINCS ID,PubChem CID,ChEBI ID,ChEMBL ID,Molecular Mass,InChi,InChi Key,SMILES,Relevant Citations,Comments,Provider,Provider Batch ID,Molecular Weight,Purity,Purification Method,Chemical Synthesis Reference,Date Publicly Available,Most Recent Update
+10240-101-2,10240,AS-252424,,LSM-4263,56965900,,,305.02,"InChI=1S/C14H8FNO4S/c15-7-1-3-9(10(17)5-7)11-4-2-8(20-11)6-12-13(18)16-14(19)21-12/h1-6,17H,(H,16,18,19)",OYYVWNDMOQPMGE-UHFFFAOYSA-N,C1=CC(=C(C=C1F)O)C2=CC=C(O2)C=C3C(=O)NC(=O)S3,,,Nathanael Gray (DFCI),,,,,,,2016-04-04

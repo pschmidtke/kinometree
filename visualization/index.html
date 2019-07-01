@@ -101,8 +101,11 @@ legend.append("text")
 var chart = svg.append("g")
     .attr("transform", "translate(" + outerRadius + "," + outerRadius + ")");
 
-d3.text("type1Inactive.nwk", function(error, life) {
-  if (error) throw error;
+d3.text("type1Inactive_manning.nwk", function(error, life) {
+  if (error) {
+    console.log(error);
+  throw error;
+  }
 
   var root = d3.hierarchy(parseNewick(life), function(d) { return d.branchset; })
       .sum(function(d) { return d.branchset ? 0 : 1; })
