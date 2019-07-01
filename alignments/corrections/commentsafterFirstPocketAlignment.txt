@@ -34,3 +34,6 @@ STK31_HUMAN - extended nter
 
 SPEG_HUMAN_2966 - realigned
 SIK3_HUMAN  - extended Nter and realigned 
+
+detected errors on position 55 and 58 on akt1/2/3 vs manning alignment which seems correct on these positions
+to be refined or corrected if possible

@@ -114,4 +114,13 @@ python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_k
 muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
 python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
 
+i=18
+j=19
+code="AKT1_HUMAN"
+
+python3 removeSequenceFromAlignment.py final_kinome_alignment_${i}.fasta final_kinome_alignment_${j}.fasta ${code}
+muscle -profile -in1 final_kinome_alignment_${j}.fasta -in2 ${code}.fasta -out final_kinome_alignment_${j}.fasta
+python3 sortAlignment.py final_kinome_alignment_${j}.fasta final_kinome_alignment_${j}.fasta
+
+
 

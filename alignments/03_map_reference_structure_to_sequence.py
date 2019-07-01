@@ -8,8 +8,12 @@ from Bio.Phylo.TreeConstruction import DistanceTreeConstructor
 from Bio import Phylo
 import sys
 
-print("usage 03_map_reference_structure_to_sequence.py kinomealginment.fasta")
+manningFlag=0
+print("usage 03_map_reference_structure_to_sequence.py kinomealginment.fasta (manning/1)")
 inputFile=sys.argv[1]
+
+if (len(sys.argv))>2:
+    manningFlag=1
 
 def getAlignmentPositionsToExtract(structureToAlignmentMap,sequenceSelections):
     #print(structureToAlignmentMap)
@@ -18,20 +22,34 @@ def getAlignmentPositionsToExtract(structureToAlignmentMap,sequenceSelections):
     print(idxs)
     return(structureToAlignmentMap[idxs])
 
-alignment = AlignIO.read(open(inputFile), "fasta")
+outputPrefix="type1Inactive"
+if manningFlag:
+    alignment = AlignIO.read(open(inputFile), "clustal")
+    outputPrefix="type1Inactive_manning"
+else :
+    alignment = AlignIO.read(open(inputFile), "fasta")
+
 print("Number of sequences in alignment %i" % len(alignment))
 
 #take example structure and gather list of seq numbers to retain (uniprot sequence) -> map to kinase domain sequence -> map to sequence alignment
 refUniprotCode="CDK2_HUMAN"
-#refUniprotCode="CMGC_CDK_CDC2_CDK2"
 kinaseDomainRange=[(4+1),286]    #+1 here because I dropped the initial residue (python 0 indexing error before)
-#kinaseDomainRange=[(3+1),286]    #+1 here because I dropped the initial residue (python 0 indexing error before)
+if manningFlag:
+    refUniprotCode="CMGC_CDK_CDC2_CDK2"
+    kinaseDomainRange=[(3+1),286]    #+1 here because I dropped the initial residue (python 0 indexing error before)
+
+
+
 type1InactiveSeedStructure={"6guk":"FC8"}
-residueSelection=npy.array([10,18,20,31,33,55,58,64,80,82,86,89,131,132,134,144,145,146,148])
+residueSelection=npy.array([10,18,20,31,33,64,80,82,86,89,131,132,134,144,145,146,148])
 #residueSelection=npy.array([10,13,14,15,18,20,31,33,55,58,63,64,66,78,80,82,86,89,131,132,134,144,145,146,148])
 #probabloy out : 13,14,15,,63,66,78,
 #likely in: 20
 #less weight: 131,132,145,146,
+#backpocket: 148, 146, 63,78
+#wrong in current alignment : 55,58
+
+
 
 type1InactiveSeedStructure={"4nj3":"2KD"}
 
@@ -61,7 +79,7 @@ if len(idxs):
             pocketAlignment+=alignment[:, pos:(pos+1)]
     pocketAlignment.sort()
     print(pocketAlignment)
-    output_handle = open("type1Inactive.fasta", "w")
+    output_handle = open(outputPrefix+".fasta", "w")
     AlignIO.write(pocketAlignment, output_handle, "fasta")
     output_handle.close()
 
@@ -69,8 +87,8 @@ if len(idxs):
     dm = calculator.get_distance(pocketAlignment) 
     constructor = DistanceTreeConstructor(calculator, 'nj')
     tree = constructor.build_tree(pocketAlignment)
-    Phylo.write(tree, 'type1Inactive.xml', 'phyloxml')
-    Phylo.write(tree, 'type1Inactive.nwk', 'newick')
+    Phylo.write(tree, outputPrefix+'.xml', 'phyloxml')
+    Phylo.write(tree, outputPrefix+'.nwk', 'newick')
 
 
 
