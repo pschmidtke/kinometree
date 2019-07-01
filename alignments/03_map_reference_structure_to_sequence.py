@@ -27,7 +27,11 @@ refUniprotCode="CDK2_HUMAN"
 kinaseDomainRange=[(4+1),286]    #+1 here because I dropped the initial residue (python 0 indexing error before)
 #kinaseDomainRange=[(3+1),286]    #+1 here because I dropped the initial residue (python 0 indexing error before)
 type1InactiveSeedStructure={"6guk":"FC8"}
-residueSelection=npy.array([10,13,14,15,18,20,31,33,55,58,63,64,66,78,80,82,86,89,131,132,134,144,145,146,148,])
+residueSelection=npy.array([10,18,20,31,33,55,58,64,80,82,86,89,131,132,134,144,145,146,148])
+#residueSelection=npy.array([10,13,14,15,18,20,31,33,55,58,63,64,66,78,80,82,86,89,131,132,134,144,145,146,148])
+#probabloy out : 13,14,15,,63,66,78,
+#likely in: 20
+#less weight: 131,132,145,146,
 
 type1InactiveSeedStructure={"4nj3":"2KD"}
 
