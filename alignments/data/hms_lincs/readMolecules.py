@@ -20,22 +20,26 @@ host="https://localhost:9003/api/v2"
 
 response=s.post(host+'/login',data = {'username':uname},verify=False, auth=(uname, pwd))
 if response.status_code==200:
-
+    
     #first let's get all kinase containing structures -  pdb codes
+    kinasePdbCodes=[]
     for uniprotCode in uniprotCodes:
         print(uniprotCode)
-        query=host+"/biomolecule/code/CHK1_HUMAN/metadata?canonicalOnly=true&metadataType=structures"
+        query=host+"/biomolecule/code/"+uniprotCode+"/metadata?canonicalOnly=true&metadataType=structures"
         biomolResponse=s.get(query)
-        kinasePdbCodes=[]
+        
         if biomolResponse.status_code==200:
             biomolResponseJson=biomolResponse.json()
             for biomolecule in biomolResponseJson["data"]["biomolecules"]:
                 kinasePdbCodes.extend(biomolecule["structureCodes"])
-        time.sleep(5)
-
+        else:
+            print(biomolResponse.status_code)
+        #time.sleep(5)
+    print(kinasePdbCodes)
     kinasePdbCodes=np.unique(np.array(kinasePdbCodes))
 
     print(kinasePdbCodes)
+    print(len(kinasePdbCodes))
 
 
     files=glob.glob("*_molecule.csv")
@@ -63,7 +67,7 @@ if response.status_code==200:
                     print(file, pdbCodes)
                     for pdbCode in pdbCodes:
                         if pdbCode in kinasePdbCodes:
-                            outputhandle.write(assayNumber+"\t"+pdbCode+"\n")
+                            outputhandle.write(assayNumber+"\t"+smiles+"\t"+pdbCode+"\n")
                             outputhandle.flush()
                     #print(smilesResponseJson["data"])
 
@@ -71,7 +75,7 @@ if response.status_code==200:
                     print(smilesResponse.status_code)
                     print(smilesResponse.text)
                     print(file,"nothing found")
-            time.sleep(5)
+            #time.sleep(5)
         except Exception as err:
             print(str(err))
             pass
