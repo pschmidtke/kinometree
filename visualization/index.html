@@ -46,12 +46,16 @@ body {
 }
 
 </style>
+<div>
 <label id="show-length">
   <input type="checkbox"> Show branch length
   <textarea id="selection" rows="4" cols="50"></textarea>
   <a href="#" onclick="selectKinases()">Select</a>
 </label>
+</div>
+<div id="d3div">
 
+  </div>
 <!-- Copyright 2011 Jason Davies https://github.com/jasondavies/newick.js -->
 <script>function parseNewick(a){for(var e=[],r={},s=a.split(/\s*(;|\(|\)|,|:)\s*/),t=0;t<s.length;t++){var n=s[t];switch(n){case"(":var c={};r.branchset=[c],e.push(r),r=c;break;case",":var c={};e[e.length-1].branchset.push(c),r=c;break;case")":r=e.pop();break;case":":break;default:var h=s[t-1];")"==h||"("==h||","==h?r.name=n:":"==h&&(r.length=parseFloat(n))}}return r}</script>
 
@@ -70,12 +74,31 @@ var cluster = d3.cluster()
     .size([360, innerRadius])
     .separation(function(a, b) { return 1; });
 
-var svg = d3.select("body").append("svg")
+var svg = d3.select("#d3div").append("svg")
     .attr("width", outerRadius * 2)
     .attr("height", outerRadius * 2)
-    .call(d3.zoom().on("zoom", function () {
+    .call(d3.zoom()
+    .scaleExtent([1 / 2, 8])
+    .on("zoom", zoomed));
+
+    var chart = svg.append("g");
+    transform = d3.zoomIdentity;
+
+
+
+    function zoomed() {
+      chart.attr("transform", d3.event.transform);
+    }
+
+    function dragged(d) {
+      d3.select(this).attr("cx", d.x = d3.event.x).attr("cy", d.y = d3.event.y);
+    }
+
+
+    /*.call(d3.zoom().on("zoom", function () {
             svg.attr("transform", d3.event.transform)
-        }));
+        }));*/
+
 
 var legend = svg.append("g")
     .attr("class", "legend")
@@ -98,10 +121,10 @@ legend.append("text")
     .attr("text-anchor", "end")
     .text(function(d) { return d; });
 
-var chart = svg.append("g")
-    .attr("transform", "translate(" + outerRadius + "," + outerRadius + ")");
 
-d3.text("type1Inactive_manning.nwk", function(error, life) {
+    //.attr("transform", "translate(" + outerRadius + "," + outerRadius + ")");
+
+d3.text("type1Inactive.nwk", function(error, life) {
   if (error) {
     console.log(error);
   throw error;
@@ -114,7 +137,7 @@ d3.text("type1Inactive_manning.nwk", function(error, life) {
   cluster(root);
 
   var input = d3.select("#show-length input").on("change", changed),
-      timeout = setTimeout(function() { input.property("checked", true).each(changed); }, 2000);
+      timeout = setTimeout(function() { input.property("checked", false).each(changed); }, 2000);
 
   setRadius(root, root.data.length = 0, Math.log(innerRadius*1000)*100);//maxLength(root));
   setColor(root);
@@ -223,9 +246,9 @@ function selectKinases(){
     console.log(values[i]);
     name=values[i].split("_")[0];
     d3.selectAll("#"+name)
-      .style('color','#ff0000')
+      .style('fill','#ff0000')
       .style('font-weight','bold')
-      .style('font-size','12pt');
+      .style('font-size','5px');
       console.log("selected");
     };
 

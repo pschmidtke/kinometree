@@ -66,7 +66,7 @@ if response.status_code==200:
                         
                     else :
                         print(klifsresponse)
-                    time.sleep(10)
+                    time.sleep(7)
                     
 
         #time.sleep(5)

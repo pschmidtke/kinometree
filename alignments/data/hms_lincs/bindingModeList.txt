@@ -1,0 +1,20 @@
+Assay   Binding-Mode    comment
+20052   type1   dataset deleted
+20162   type2
+20329   type1
+20196   type1
+20184   type1
+20059   type1
+20083   allosteric
+20200   type1
+20197   type1
+20109   type1
+20187   type1   stauro
+20210   type2   
+20326   type1
+20179   type1   probably in-even though other conformations as well
+20199   type1
+20105   type1
+20198   type2
+20033   type1
+20116   type1
