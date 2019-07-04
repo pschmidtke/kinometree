@@ -1,4 +1,4 @@
-Assay   Binding-Mode    comment
+Assay   Binding-Mode    example comment
 20052   type1   dataset deleted
 20162   type2
 20329   type1
