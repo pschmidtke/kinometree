@@ -6,9 +6,10 @@ import sys
 host=sys.argv[1]
 password=sys.argv[2]
 
+
 oracle_connection_string = (
     'oracle+cx_oracle://DEV_T1_DNG_THREEDECISION:'+password+'@' +
-    cx_Oracle.makedsn(host, '31416', service_name='pdb1orcl1d')
+    cx_Oracle.makedsn(host, '1521', service_name='pdb1orcl1d')
 )
 
 engine = create_engine(
@@ -21,9 +22,14 @@ engine = create_engine(
     )
 )
 
-data = pd.read_sql("""select count(residue_number), residue_number, residue_code
+externalCode='6guk'
+ligandCode='FC8'
+uniprotCode='CDK2_HUMAN'
+data = pd.read_sql("""select count(residue_number) cnt, residue_number, residue_code
 from contact_sidechain_vw  
 where 
-    contact_sidechain_vw.external_code='5dls' and contact_sidechain_vw.lig_residue_code='5CV' and contact_sidechain_vw.biomol_code='CHK1_HUMAN'
+    contact_sidechain_vw.external_code='"""+externalCode+"""' and contact_sidechain_vw.lig_residue_code='"""+ligandCode+"""' and contact_sidechain_vw.biomol_code='"""+uniprotCode+"""'
 group by residue_number,residue_code""", engine)
-print(data)
+res=data["residue_number"].to_list()
+res.sort()
+print(res)
