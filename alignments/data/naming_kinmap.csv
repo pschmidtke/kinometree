@@ -140,9 +140,9 @@
 138	IRE1	IRE1	ERN1	Serine/threonine-protein kinase/endoribonuclease IRE1	Other	IRE		O75460	ERN1_HUMAN
 139	IRR	IRR	INSRR	Insulin receptor-related protein	TK	InsR		P14616	INSRR_HUMAN
 140	ITK	ITK	ITK	Tyrosine-protein kinase ITK/TSK	TK	Tec		Q08881	ITK_HUMAN
-141	JAK1	JAK1	JAK1	Tyrosine-protein kinase JAK1	TK	Jak		P23458	JAK1_HUMAN
-142	JAK2	JAK2	JAK2	Tyrosine-protein kinase JAK2	TK	Jak		O60674	JAK2_HUMAN
-143	JAK3	JAK3	JAK3	Tyrosine-protein kinase JAK3	TK	Jak		P52333	JAK3_HUMAN
+141	JAK1	JAK1	JAK1	Tyrosine-protein kinase JAK1	TK	Jak		P23458	JAK1_HUMAN_583
+142	JAK2	JAK2	JAK2	Tyrosine-protein kinase JAK2	TK	Jak		O60674	JAK2_HUMAN_545
+143	JAK3	JAK3	JAK3	Tyrosine-protein kinase JAK3	TK	Jak		P52333	JAK3_HUMAN_521
 144	JNK1	JNK1	MAPK8	Mitogen-activated protein kinase 8	CMGC	MAPK	JNK	P45983	MK08_HUMAN
 145	JNK2	JNK2	MAPK9	Mitogen-activated protein kinase 9	CMGC	MAPK	JNK	P45984	MK09_HUMAN
 146	JNK3	JNK3	MAPK10	Mitogen-activated protein kinase 10	CMGC	MAPK	JNK	P53779	MK10_HUMAN
@@ -190,8 +190,8 @@
 188	MAP2K3	MAP2K3	MAP2K3	Dual specificity mitogen-activated protein kinase kinase 3	STE	STE7		P46734	MP2K3_HUMAN
 189	MAP2K4	MAP2K4	MAP2K4	Dual specificity mitogen-activated protein kinase kinase 4	STE	STE7		P45985	MP2K4_HUMAN
 190	MRCKb	MRCKb	CDC42BPB	Serine/threonine-protein kinase MRCK beta	AGC	DMPK	GEK	Q9Y5S2	MRCKB_HUMAN
-191	MSK1	MSK1	RPS6KA5	Ribosomal protein S6 kinase alpha-5	AGC	RSK	MSK	O75582	KS6A5_HUMAN
-192	MSK2	MSK2	RPS6KA4	Ribosomal protein S6 kinase alpha-4	AGC	RSK	MSK	O75676	KS6A4_HUMAN
+191	MSK1	MSK1	RPS6KA5	Ribosomal protein S6 kinase alpha-5	AGC	RSK	MSK	O75582	KS6A5_HUMAN_49
+192	MSK2	MSK2	RPS6KA4	Ribosomal protein S6 kinase alpha-4	AGC	RSK	MSK	O75676	KS6A4_HUMAN_33
 193	MST1	MST1	STK4	Serine/threonine-protein kinase 4	STE	STE20	MST	Q13043	STK4_HUMAN
 194	MST2	MST2	STK3	Serine/threonine-protein kinase 3	STE	STE20	MST	Q13188	STK3_HUMAN
 195	MST3	MST3	STK24	Serine/threonine-protein kinase 24	STE	STE20	YSK	Q9Y6E0	STK24_HUMAN
@@ -267,9 +267,9 @@
 265	ROR1	ROR1	ROR1	Tyrosine-protein kinase transmembrane receptor ROR1	TK	Ror		Q01973	ROR1_HUMAN
 266	ROR2	ROR2	ROR2	Tyrosine-protein kinase transmembrane receptor ROR2	TK	Ror		Q01974	ROR2_HUMAN
 267	ROS	ROS	ROS1	Proto-oncogene tyrosine-protein kinase ROS	TK	Sev		P08922	ROS1_HUMAN
-268	RSK3	RSK1	RPS6KA2	Ribosomal protein S6 kinase alpha-2	AGC	RSK	RSKp90	Q15349	KS6A2_HUMAN
-269	RSK2	RSK2	RPS6KA3	Ribosomal protein S6 kinase alpha-3	AGC	RSK	RSKp90	P51812	KS6A3_HUMAN
-270	RSK1	RSK3	RPS6KA1	Ribosomal protein S6 kinase alpha-1	AGC	RSK	RSKp90	Q15418	KS6A1_HUMAN
+268	RSK3	RSK1	RPS6KA2	Ribosomal protein S6 kinase alpha-2	AGC	RSK	RSKp90	Q15349	KS6A2_HUMAN_59
+269	RSK2	RSK2	RPS6KA3	Ribosomal protein S6 kinase alpha-3	AGC	RSK	RSKp90	P51812	KS6A3_HUMAN_68
+270	RSK1	RSK3	RPS6KA1	Ribosomal protein S6 kinase alpha-1	AGC	RSK	RSKp90	Q15418	KS6A1_HUMAN_62
 271	RYK	RYK	RYK	Tyrosine-protein kinase RYK	TK	Ryk		P34925	RYK_HUMAN
 272	PLK4	PLK4	PLK4	Serine/threonine-protein kinase PLK4	Other	PLK		O00444	PLK4_HUMAN
 273	p38b	p38b	MAPK11	Mitogen-activated protein kinase 11	CMGC	MAPK	p38	Q15759	MK11_HUMAN
@@ -304,7 +304,7 @@
 302	TRRAP	TRRAP	TRRAP	Transformation/transcription domain-associated protein	Atypical	PIKK	TRRAP	Q9Y4A5	TRRAP_HUMAN
 303	TTK	TTK	TTK	Dual specificity protein kinase TTK	Other	TTK		P33981	TTK_HUMAN
 304	TXK	TXK	TXK	Tyrosine-protein kinase TXK	TK	Tec		P42681	TXK_HUMAN
-305	TYK2	TYK2	TYK2	Non-receptor tyrosine-protein kinase TYK2	TK	Jak		P29597	TYK2_HUMAN
+305	TYK2	TYK2	TYK2	Non-receptor tyrosine-protein kinase TYK2	TK	Jak		P29597	TYK2_HUMAN_589
 306	TYRO3	TYRO3	TYRO3	Tyrosine-protein kinase receptor TYRO3	TK	Axl		Q06418	TYRO3_HUMAN
 307	ULK1	ULK1	ULK1	Serine/threonine-protein kinase ULK1	Other	ULK		O75385	ULK1_HUMAN
 308	ULK2	ULK2	ULK2	Serine/threonine-protein kinase ULK2	Other	ULK		Q8IYT8	ULK2_HUMAN
@@ -394,7 +394,7 @@
 392	DRAK2	DRAK2	STK17B	Serine/threonine-protein kinase 17B	CAMK	DAPK		O94768	ST17B_HUMAN
 393	DYRK3	DYRK3	DYRK3	Dual specificity tyrosine-phosphorylation-regulated kinase 3	CMGC	DYRK	DYRK2	O43781	DYRK3_HUMAN
 394	PKD3	PKD3	PRKD3	Serine/threonine-protein kinase D3	CAMK	PKD		O94806	KPCD3_HUMAN
-395	GCN2	GCN2	EIF2AK4	Eukaryotic translation initiation factor 2-alpha kinase 4	Other	PEK	GCN2	Q9P2K8	E2AK4_HUMAN
+395	GCN2	GCN2	EIF2AK4	Eukaryotic translation initiation factor 2-alpha kinase 4	Other	PEK	GCN2	Q9P2K8	E2AK4_HUMAN_296
 396	SgK494	SgK494		Uncharacterized serine/threonine-protein kinase SgK494	AGC	RSKR		Q96LW2	KS6R_HUMAN
 397	SgK495	SgK495	STK40	Serine/threonine-protein kinase 40	CAMK	SgK495		Q8N2I9	STK40_HUMAN
 398	CLIK1	CLIK1	STK35	Serine/threonine-protein kinase 35	Other	NKF4		Q8TDR2	STK35_HUMAN
@@ -420,7 +420,7 @@
 418	MARK4	MARK4	MARK4	MAP/microtubule affinity-regulating kinase 4	CAMK	CAMKL	MARK	Q96L34	MARK4_HUMAN
 419	SgK496	SgK496	DSTYK	Dual serine/threonine and tyrosine protein kinase	Other	Dusty		Q6XUX3	DUSTY_HUMAN
 420	RSKL1	RSKL1	RPS6KC1	Ribosomal protein S6 kinase delta-1	AGC	RSKL		Q96S38	KS6C1_HUMAN
-421	RSK4	RSK4	RPS6KA6	Ribosomal protein S6 kinase alpha-6	AGC	RSK	RSKp90	Q9UK32	KS6A6_HUMAN
+421	RSK4	RSK4	RPS6KA6	Ribosomal protein S6 kinase alpha-6	AGC	RSK	RSKp90	Q9UK32	KS6A6_HUMAN_73
 422	NRBP2	NRBP2	NRBP2	Nuclear receptor-binding protein 2	Other	NRBP		Q9NSY0	NRBP2_HUMAN
 423	SgK071	SgK071	STKLD1	Protein kinase-like protein SgK071	Other	SgK071		Q8NE28	STKL1_HUMAN
 424	SGK2	SGK2	SGK2	Serine/threonine-protein kinase Sgk2	AGC	SGK		Q9HBY8	SGK2_HUMAN
@@ -437,7 +437,7 @@
 435	TSSK4	TSSK4	TSSK4	Testis-specific serine/threonine-protein kinase 4	CAMK	TSSK		Q6SA08	TSSK4_HUMAN
 436	VRK3	VRK3	VRK3	Inactive serine/threonine-protein kinase VRK3	CK1	VRK		Q8IV63	VRK3_HUMAN
 437	caMLCK	caMLCK	MYLK3	Myosin light chain kinase 3	CAMK	MLCK		Q32MK0	MYLK3_HUMAN
-438	SPEG	SPEG	SPEG	Striated muscle preferentially expressed protein kinase	CAMK	Trio		Q15772	SPEG_HUMAN
+438	SPEG	SPEG	SPEG	Striated muscle preferentially expressed protein kinase	CAMK	Trio		Q15772	SPEG_HUMAN_2966
 439	CK1a2	CK1a2	CSNK1A1L	Casein kinase I isoform alpha-like	CK1	CK1		Q8N752	KC1AL_HUMAN
 440	ANKRD3	ANKRD3	RIPK4	Receptor-interacting serine/threonine-protein kinase 4	TKL	RIPK		P57078	RIPK4_HUMAN
 441	NEK5	NEK5	NEK5	Serine/threonine-protein kinase Nek5	Other	NEK		Q6P3R8	NEK5_HUMAN
@@ -451,7 +451,7 @@
 449	Wnk4	Wnk4	WNK4	Serine/threonine-protein kinase WNK4	Other	WNK		Q96J92	WNK4_HUMAN
 450	SgK110	SgK110	SBK3	Putative uncharacterized serine/threonine-protein kinase SgK110	Other	NKF1		P0C264	SBK3_HUMAN
 451	BRSK1	BRSK1	BRSK1	Serine/threonine-protein kinase BRSK1	CAMK	CAMKL	BRSK	Q8TDC3	BRSK1_HUMAN
-452	Obscn	Obscn	OBSCN	Obscurin	CAMK	Trio		Q5VST9	OBSCN_HUMAN
+452	Obscn	Obscn	OBSCN	Obscurin	CAMK	Trio		Q5VST9	OBSCN_HUMAN_6468
 453	PSKH2	PSKH2	PSKH2	Serine/threonine-protein kinase H2	CAMK	PSK		Q96QS6	KPSH2_HUMAN
 454	SIK	SIK	SIK1	Serine/threonine-protein kinase SIK1	CAMK	CAMKL	QIK	P57059	SIK1_HUMAN
 455	KSR2	KSR2	KSR2	Kinase suppressor of Ras 2	TKL	RAF		Q6VAB6	KSR2_HUMAN
@@ -490,7 +490,6 @@
 488	CaMK2d	CaMK2d	CAMK2D	Calcium/calmodulin-dependent protein kinase type II subunit delta	CAMK	CAMK2		Q13557	KCC2D_HUMAN
 489	BIKE	BIKE	BMP2K	BMP-2-inducible protein kinase	Other	NAK		Q9NSY1	BMP2K_HUMAN
 490	TSSK1	TSSK1	TSSK1B	Testis-specific serine/threonine-protein kinase 1	CAMK	TSSK		Q9BXA7	TSSK1_HUMAN
-491	SgK424	SgK424	TEX14	Inactive serine/threonine-protein kinase TEX14	Other	NKF5		Q8IWB6	TEX14_HUMAN
 492	SgK085	SgK085	MYLK4	Myosin light chain kinase family member 4	CAMK	MLCK		Q86YV6	MYLK4_HUMAN
 493	ADCK2	ADCK2	ADCK2	Uncharacterized aarF domain-containing protein kinase 2	Atypical	ABC1	ABC1-C	Q7Z695	ADCK2_HUMAN
 494	DAPK3	DAPK3	DAPK3	Death-associated protein kinase 3	CAMK	DAPK		O43293	DAPK3_HUMAN
@@ -509,19 +508,19 @@
 507	TIF1a	TIF1a	TRIM24	Transcription intermediary factor 1-alpha	Atypical	TIF1		O15164	TIF1A_HUMAN
 508	TIF1b	TIF1b	TRIM28	Transcription intermediary factor 1-beta	Atypical	TIF1		Q13263	TIF1B_HUMAN
 509	TIF1g	TIF1g	TRIM33	E3 ubiquitin-protein ligase TRIM33	Atypical	TIF1		Q9UPN9	TRI33_HUMAN
-510	JAK1_b	Domain2_JAK1	JAK1	Tyrosine-protein kinase JAK1	TK	JakB		P23458	JAK1_HUMAN
-511	JAK2_b	Domain2_JAK2	JAK2	Tyrosine-protein kinase JAK2	TK	JakB		O60674	JAK2_HUMAN
-512	JAK3_b	Domain2_JAK3	JAK3	Tyrosine-protein kinase JAK3	TK	JakB		P52333	JAK3_HUMAN
-513	MSK1_b	Domain2_MSK1	RPS6KA5	Ribosomal protein S6 kinase alpha-5	CAMK	RSKb	MSKb	O75582	KS6A5_HUMAN
-514	MSK2_b	Domain2_MSK2	RPS6KA4	Ribosomal protein S6 kinase alpha-4	CAMK	RSKb	MSKb	O75676	KS6A4_HUMAN
-515	RSK3_b	Domain2_RSK1	RPS6KA2	Ribosomal protein S6 kinase alpha-2	CAMK	RSKb	RSKb	Q15349	KS6A2_HUMAN
-516	RSK2_b	Domain2_RSK2	RPS6KA3	Ribosomal protein S6 kinase alpha-3	CAMK	RSKb	RSKb	P51812	KS6A3_HUMAN
-517	RSK1_b	Domain2_RSK3	RPS6KA1	Ribosomal protein S6 kinase alpha-1	CAMK	RSKb	RSKb	Q15418	KS6A1_HUMAN
-518	TYK2_b	Domain2_TYK2	TYK2	Non-receptor tyrosine-protein kinase TYK2	TK	JakB		P29597	TYK2_HUMAN
-519	GCN2_b	Domain2_GCN2	EIF2AK4	Eukaryotic translation initiation factor 2-alpha kinase 4	STE	STE-Unique		Q9P2K8	E2AK4_HUMAN
-520	RSK4_b	Domain2_RSK4	RPS6KA6	Ribosomal protein S6 kinase alpha-6	CAMK	RSKb	RSKb	Q9UK32	KS6A6_HUMAN
-521	SPEG_b	Domain2_SPEG	SPEG	Striated muscle preferentially expressed protein kinase	CAMK	Trio		Q15772	SPEG_HUMAN
-522	Obscn_b	Domain2_Obscn	OBSCN	Obscurin	CAMK	Trio		Q5VST9	OBSCN_HUMAN
+510	JAK1_b	Domain2_JAK1	JAK1	Tyrosine-protein kinase JAK1	TK	JakB		P23458	JAK1_HUMAN_875
+511	JAK2_b	Domain2_JAK2	JAK2	Tyrosine-protein kinase JAK2	TK	JakB		O60674	JAK2_HUMAN_849
+512	JAK3_b	Domain2_JAK3	JAK3	Tyrosine-protein kinase JAK3	TK	JakB		P52333	JAK3_HUMAN_822
+513	MSK1_b	Domain2_MSK1	RPS6KA5	Ribosomal protein S6 kinase alpha-5	CAMK	RSKb	MSKb	O75582	KS6A5_HUMAN_427
+514	MSK2_b	Domain2_MSK2	RPS6KA4	Ribosomal protein S6 kinase alpha-4	CAMK	RSKb	MSKb	O75676	KS6A4_HUMAN_412
+515	RSK3_b	Domain2_RSK1	RPS6KA2	Ribosomal protein S6 kinase alpha-2	CAMK	RSKb	RSKb	Q15349	KS6A2_HUMAN_415
+516	RSK2_b	Domain2_RSK2	RPS6KA3	Ribosomal protein S6 kinase alpha-3	CAMK	RSKb	RSKb	P51812	KS6A3_HUMAN_422
+517	RSK1_b	Domain2_RSK3	RPS6KA1	Ribosomal protein S6 kinase alpha-1	CAMK	RSKb	RSKb	Q15418	KS6A1_HUMAN_418
+518	TYK2_b	Domain2_TYK2	TYK2	Non-receptor tyrosine-protein kinase TYK2	TK	JakB		P29597	TYK2_HUMAN_897
+519	GCN2_b	Domain2_GCN2	EIF2AK4	Eukaryotic translation initiation factor 2-alpha kinase 4	STE	STE-Unique		Q9P2K8	E2AK4_HUMAN_590_788
+520	RSK4_b	Domain2_RSK4	RPS6KA6	Ribosomal protein S6 kinase alpha-6	CAMK	RSKb	RSKb	Q9UK32	KS6A6_HUMAN_426
+521	SPEG_b	Domain2_SPEG	SPEG	Striated muscle preferentially expressed protein kinase	CAMK	Trio		Q15772	SPEG_HUMAN_1601
+522	Obscn_b	Domain2_Obscn	OBSCN	Obscurin	CAMK	Trio		Q5VST9	OBSCN_HUMAN_7672
 523	PAN3	PAN3	PAN3	PAB-dependent poly(A)-specific ribonuclease subunit 3	Other	PAN3		Q58A45	PAN3_HUMAN
 524	FASTK	FASTK	FASTK	Fas-activated serine/threonine kinase	Atypical	FAST		Q14296	FASTK_HUMAN
 525	G11	G11	STK19	Serine/threonine-protein kinase 19	Atypical	G11		P49842	STK19_HUMAN
