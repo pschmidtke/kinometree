@@ -13,7 +13,10 @@ def getActives(threshold,infile,activity,op):
     
     df=pd.read_csv(infile,sep=",")
     hms=pd.read_csv("data/hms_lincs_proteins_ok.csv",sep="\t")
-    data=df.loc[(op(df[activity],threshold))]
+    if op==operator.gt:
+        data=df.loc[(op(df[activity],threshold)) | (df[activity].isnull())]
+    else: 
+        data=df.loc[(op(df[activity],threshold))]
     data["UNIPROT_CODE"]="NA"
 
     for idx,row in data.iterrows():

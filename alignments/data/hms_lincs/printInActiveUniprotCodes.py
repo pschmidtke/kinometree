@@ -10,8 +10,9 @@ if(len(sys.argv)>2):
 #print(threshold)
 
 df=pd.read_csv(infile,sep=",")
+print(df)
 hms=pd.read_csv("../hms_lincs_proteins_ok.csv",sep="\t")
-data=df.loc[(df[activity]>=threshold)]
+data=df.loc[(df[activity]>=threshold) | df[activity].isnull()]
 #print(data)
 data["UNIPROT_CODE"]="NA"
 
