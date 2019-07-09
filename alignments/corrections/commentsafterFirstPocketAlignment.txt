@@ -41,3 +41,9 @@ to be refined or corrected if possible
 
 TODO : FLT4 missing -> add it manually
 PI4KB missing
+
+
+dropped line from kinmap: 
+491	SgK424	SgK424	TEX14	Inactive serine/threonine-protein kinase TEX14	Other	NKF5		Q8IWB6	TEX14_HUMAN
+
+No info to support this one
