@@ -1,12 +1,15 @@
 import pandas as pd 
 import sys
 import numpy as np
+from Bio import AlignIO
+from Bio import SeqIO
 
 infile=sys.argv[1]
 threshold=float(sys.argv[2])
+alignmentFile=sys.argv[3]
 activity="% Control"
-if(len(sys.argv)>2):
-    activity=sys.argv[3]
+if(len(sys.argv)>3):
+    activity=sys.argv[4]
 #print(threshold)
 
 df=pd.read_csv(infile,sep=",")
@@ -22,5 +25,14 @@ for idx,row in data.iterrows():
         pass
 #print(data)
 x=np.unique(np.array(data["UNIPROT_CODE"].to_list()))
+alignment=AlignIO.read(alignmentFile, "fasta")
 
+records=[]
+with open(alignmentFile+"actives.fasta", "w") as handle:
+          
+    for record in alignment:
+        name=record.id
+        for uniprotName in x:
+            if uniprotName in name:
+                SeqIO.write(record, handle, "fasta")
 print('\n'.join(x))

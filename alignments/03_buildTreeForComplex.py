@@ -112,6 +112,8 @@ def getUniprotSequence(uniprotCode,uname,pwd):
             o.close()
             seq=SeqIO.read("tmp.fasta",'fasta')
             return(seq)
+        else :
+            sys.exit(biomolResponse.status_code)
 
     else:
         print("unable to retrieve uniprot sequence")
@@ -162,7 +164,6 @@ def getDomainRange(alignment,sequence,seqid):
                     break
             else:
                 print("Name: "+ manningName+ " could not be translated")
-
     if(len(s)):
         index=str(sequence.seq).index(s[:50])    #get position of subsequence on aligned sequence
         print("found kinase domain start on position "+str(index-1))
@@ -268,7 +269,7 @@ if len(idxs):
             pocketAlignment=alignment[:, pos:(pos+1)]
         else :
             pocketAlignment+=alignment[:, pos:(pos+1)]
-    #pocketAlignment=alignment # just to get the original manning tree
+    pocketAlignment=alignment # just to get the original manning tree
     pocketAlignment.sort()
     pocketAlignment=completeLabelsKinome(pocketAlignment)
     print(pocketAlignment)
@@ -281,7 +282,7 @@ if len(idxs):
     #constructor = Phylo.TreeConstruction.ParsimonyTreeConstructor(searcher)
     #tree = constructor.build_tree(pocketAlignment)
 
-    calculator = DistanceCalculator('blosum90')
+    calculator = DistanceCalculator('blosum62')
     dm = calculator.get_distance(pocketAlignment) 
     constructor = DistanceTreeConstructor(calculator, 'nj')
     tree = constructor.build_tree(pocketAlignment)

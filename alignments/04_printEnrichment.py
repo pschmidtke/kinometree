@@ -78,33 +78,35 @@ def evaluateTree(tree,matrix="provided"):
 
     clade=tree.root
     efDict=getEnrichmentForClade(clade,ratioActivesTotal,ratioInactivesTotal)
-    print(efDict)
+    #print(efDict)
     #from functools import reduce 
     #efDictFinal=[reduce(lambda x,y: {**x,**y},d.values()) for d in efDict]
 
     # print("matrix minLeafs nLeafs meanRelEF")
-    # for minN in range(1,100):
-    #     nAboveminActiveN=len([key for key in efDict.keys() if (efDict[key][2]>minN and efDict[key][0]>0.3)])
-    #     nAboveminInactiveN=len([key for key in efDict.keys() if (efDict[key][2]>minN and efDict[key][1]>0.3)])
+    o=open(treeFile+"_enrichment.csv","w")
+    o.write("tree cladeSize nAboveminActiveN nAboveminInactiveN meanActives stdActives meanInactives stdInactives\n")
+    for minN in range(1,100):
+        nAboveminActiveN=len([key for key in efDict.keys() if (efDict[key][2]>minN and efDict[key][0]>0.3)])
+        nAboveminInactiveN=len([key for key in efDict.keys() if (efDict[key][2]>minN and efDict[key][1]>0.3)])
 
 
-    #     resActives=[efDict[key][0] for key in efDict.keys() if (efDict[key][2]>minN and efDict[key][0]>0.3)]
+        resActives=[efDict[key][0] for key in efDict.keys() if (efDict[key][2]>minN and efDict[key][0]>0.3)]
 
-    #     resInactives=[efDict[key][1] for key in efDict.keys() if (efDict[key][2]>minN and efDict[key][1]>0.3)]
+        resInactives=[efDict[key][1] for key in efDict.keys() if (efDict[key][2]>minN and efDict[key][1]>0.3)]
         
-    #     if(len(resActives)):
-    #         meanActives=np.mean(resActives)
-    #         stdActives=np.std(resActives)
-    #     else:
-    #         meanActives=0.0
-    #         stdActives=0.0
-    #     if(len(resInactives)):
-    #         meanInactives=np.mean(resInactives)
-    #         stdInactives=np.std(resInactives)
-    #     else:
-    #         meanInactives=0.0
-    #         stdInactives=0.0
-    #     print(matrix,minN,nAboveminActiveN,nAboveminInactiveN,meanActives,stdActives,meanInactives,stdInactives)
+        if(len(resActives)):
+            meanActives=np.mean(resActives)
+            stdActives=np.std(resActives)
+        else:
+            meanActives=0.0
+            stdActives=0.0
+        if(len(resInactives)):
+            meanInactives=np.mean(resInactives)
+            stdInactives=np.std(resInactives)
+        else:
+            meanInactives=0.0
+            stdInactives=0.0
+        o.write((str(matrix)+" "+str(minN)+" "+str(nAboveminActiveN)+" "+str(nAboveminInactiveN)+" "+str(meanActives)+" "+str(stdActives)+" "+str(meanInactives)+" "+str(stdInactives)+"\n"))
 
 
     #for key in efDict.keys():
